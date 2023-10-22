@@ -24,15 +24,9 @@ Os testes abrangem as seguintes áreas do sistema:
 * Chat de Comunicação
 * Avaliações e Classificações
 * Gestão de Trocas
-* Segurança
-* Escalabilidade
-* Desempenho
 * Disponibilidade
 * Usabilidade
-* Privacidade
-* Backup e Recuperação de Dados
 * Compatibilidade de Navegadores
-* Acessibilidade
 
 ## 4. Estratégia de Teste
    
@@ -52,25 +46,25 @@ Os testes serão conduzidos em várias fases, incluindo:
 * Caso de Teste 1: Verificar o cadastro de usuário.
 * Caso de Teste 2: Verificar a criação de perfil de usuário.
 * Caso de Teste 3: Verificar a pesquisa de serviços por categoria.
-...
+
 
 ### 5.2 Teste de Integração
 
 * Caso de Teste 4: Verificar a integração entre o cadastro de usuário e o perfil do usuário.
 * Caso de Teste 5: Verificar a integração entre a pesquisa de serviços e a publicação de ofertas de serviços.
-...
+  
 
 ### 5.3 Teste de Sistema
 
 * Caso de Teste 6: Teste completo do processo de solicitação de serviços e gestão de trocas.
 * Caso de Teste 7: Teste de segurança para proteção de dados do usuário.
-...
+
 
 ### 5.4 Teste de Desempenho
 
 * Caso de Teste 8: Avaliar o desempenho sob carga simulando múltiplos usuários.
-* Caso de Teste 9: Avaliar a escalabilidade do sistema.
-...
+
+
 
 ### 5.5 Teste de Segurança
 
