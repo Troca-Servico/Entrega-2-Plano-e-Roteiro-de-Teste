@@ -97,7 +97,7 @@ O projeto será considerado aceito se:
 * Os relatórios de bugs forem tratados de acordo com o processo definido.
 * Os usuários de teste aprovarem a usabilidade e acessibilidade do sistema.
 
-  
+-------------------------------------------------------------------------------  
 
 # Roteiro de Teste - Sistema de Troca de Serviços
 
