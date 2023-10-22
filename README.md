@@ -96,3 +96,130 @@ O projeto será considerado aceito se:
 * Todos os casos de teste forem bem-sucedidos.
 * Os relatórios de bugs forem tratados de acordo com o processo definido.
 * Os usuários de teste aprovarem a usabilidade e acessibilidade do sistema.
+
+  
+
+# Roteiro de Teste - Sistema de Troca de Serviços
+
+## Funcionalidade: Cadastro de Usuário
+
+  ### Cenário: Cadastro de um novo usuário com informações válidas
+    Dado que o usuário está na página de cadastro
+    Quando o usuário preenche os campos obrigatórios com informações válidas
+    E clica no botão "Cadastrar"
+    Então o usuário deve ser redirecionado para seu perfil
+
+ ### Cenário: Tentativa de cadastro com informações inválidas
+    Dado que o usuário está na página de cadastro
+    Quando o usuário preenche os campos com informações inválidas
+    E clica no botão "Cadastrar"
+    Então o sistema deve exibir uma mensagem de erro
+
+Funcionalidade: Perfil do Usuário
+
+  Cenário: Atualização do perfil de usuário
+    Dado que o usuário está logado em sua conta
+    E está na página de edição de perfil
+    Quando o usuário atualiza suas informações pessoais
+    E clica no botão "Salvar"
+    Então as informações do perfil do usuário devem ser atualizadas
+
+  Cenário: Visualização do perfil de outro usuário
+    Dado que o usuário está logado em sua conta
+    E há um outro usuário registrado no sistema
+    Quando o usuário visualiza o perfil desse outro usuário
+    Então o sistema deve exibir as informações do perfil desse usuário
+
+Funcionalidade: Pesquisa de Serviços
+
+  Cenário: Pesquisa de serviços por categoria
+    Dado que o usuário está logado em sua conta
+    E há serviços cadastrados no sistema com categorias específicas
+    Quando o usuário seleciona uma categoria de serviço
+    E clica no botão "Pesquisar"
+    Então o sistema deve exibir uma lista de serviços da categoria selecionada
+
+  Cenário: Pesquisa de serviços com palavras-chave
+    Dado que o usuário está logado em sua conta
+    E há serviços cadastrados no sistema com descrições que contêm palavras-chave
+    Quando o usuário insere palavras-chave na barra de pesquisa
+    E clica no botão "Pesquisar"
+    Então o sistema deve exibir uma lista de serviços com base nas palavras-chave
+
+Funcionalidade: Publicação de Ofertas de Serviços
+
+  Cenário: Publicação de uma oferta de serviço
+    Dado que o usuário está logado em sua conta
+    E está na página de publicação de ofertas de serviços
+    Quando o usuário preenche os detalhes da oferta de serviço
+    E clica no botão "Publicar"
+    Então a oferta de serviço deve ser visível para outros usuários
+
+  Cenário: Tentativa de publicação de oferta com informações em falta
+    Dado que o usuário está logado em sua conta
+    E está na página de publicação de ofertas de serviços
+    Quando o usuário tenta publicar uma oferta de serviço com informações em falta
+    E clica no botão "Publicar"
+    Então o sistema deve exibir uma mensagem de erro
+
+Funcionalidade: Solicitação de Serviços
+
+  Cenário: Envio de uma solicitação de serviço
+    Dado que o usuário está logado em sua conta
+    E está visualizando uma oferta de serviço
+    Quando o usuário envia uma solicitação para o prestador de serviço
+    E clica no botão "Enviar Solicitação"
+    Então o prestador de serviço deve receber a solicitação
+
+  Cenário: Tentativa de envio de solicitação sem preencher informações necessárias
+    Dado que o usuário está logado em sua conta
+    E está visualizando uma oferta de serviço
+    Quando o usuário tenta enviar uma solicitação sem preencher informações necessárias
+    E clica no botão "Enviar Solicitação"
+    Então o sistema deve exibir uma mensagem de erro
+
+Funcionalidade: Chat de Comunicação
+
+  Cenário: Iniciar uma conversa com outro usuário
+    Dado que o usuário está logado em sua conta
+    E está na página de mensagens
+    Quando o usuário inicia uma conversa com outro usuário
+    Então o sistema deve abrir uma janela de chat com o outro usuário
+
+  Cenário: Enviar uma mensagem em uma conversa existente
+    Dado que o usuário está logado em sua conta
+    E está em uma conversa existente com outro usuário
+    Quando o usuário digita uma mensagem e a envia
+    Então a mensagem deve ser entregue ao outro usuário
+
+Funcionalidade: Avaliações e Classificações
+
+  Cenário: Avaliar outro usuário após uma troca de serviço
+    Dado que o usuário está logado em sua conta
+    E conclui uma troca de serviço com outro usuário
+    Quando o usuário acessa a página de avaliações
+    E classifica o outro usuário
+    Então a avaliação e classificação devem ser registradas
+
+  Cenário: Tentativa de avaliação sem completar uma troca de serviço
+    Dado que o usuário está logado em sua conta
+    E não concluiu uma troca de serviço com outro usuário
+    Quando o usuário tenta avaliar o outro usuário
+    Então o sistema deve exibir uma mensagem de erro
+
+Funcionalidade: Gestão de Trocas
+
+  Cenário: Visualização das trocas de serviço pendentes
+    Dado que o usuário está logado em sua conta
+    E há trocas de serviço pendentes em seu perfil
+    Quando o usuário acessa a página de trocas pendentes
+    Então o sistema deve exibir uma lista das trocas pendentes
+
+  Cenário: Marcar uma troca de serviço como concluída
+    Dado que o usuário está logado em sua conta
+    E há uma troca de serviço pendente em seu perfil
+    Quando o usuário marca a troca de serviço como concluída
+    Então a troca de serviço deve ser atualizada como concluída
+
+
+
