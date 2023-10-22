@@ -87,7 +87,7 @@ Os testes serão conduzidos em várias fases, incluindo:
 ## 6. Recursos e Cronograma
 
 * Recursos: Equipe de teste, ambiente de teste, dados de teste, usuários de teste.
-* Cronograma: Os testes ocorrerão ao longo de um período de [especificar o período].
+* Cronograma: Os testes ocorrerão ao longo de um período de [31/10 até 27/11].
 
 ## 7. Critérios de Aceitação
 
