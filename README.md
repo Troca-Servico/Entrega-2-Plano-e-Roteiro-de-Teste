@@ -1,4 +1,4 @@
-#* Plano de Teste - Sistema de Troca de Serviços *#
+# Plano de Teste - Sistema de Troca de Serviços 
 
 
 ## 1. Introdução
