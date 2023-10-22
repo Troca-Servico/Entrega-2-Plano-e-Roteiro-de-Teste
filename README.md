@@ -103,17 +103,17 @@ O projeto será considerado aceito se:
 
 ## Funcionalidade: Cadastro de Usuário
 
-  ### Cenário: Cadastro de um novo usuário com informações válidas
-    Dado que o usuário está na página de cadastro
-    Quando o usuário preenche os campos obrigatórios com informações válidas
-    E clica no botão "Cadastrar"
-    Então o usuário deve ser redirecionado para seu perfil
+### Cenário: Cadastro de um novo usuário com informações válidas
+   * Dado que o usuário está na página de cadastro
+   * Quando o usuário preenche os campos obrigatórios com informações válidas
+   * E clica no botão "Cadastrar"
+   * Então o usuário deve ser redirecionado para seu perfil
 
  ### Cenário: Tentativa de cadastro com informações inválidas
-    Dado que o usuário está na página de cadastro
-    Quando o usuário preenche os campos com informações inválidas
-    E clica no botão "Cadastrar"
-    Então o sistema deve exibir uma mensagem de erro
+   * Dado que o usuário está na página de cadastro
+   * Quando o usuário preenche os campos com informações inválidas
+   * E clica no botão "Cadastrar"
+   * Então o sistema deve exibir uma mensagem de erro
 
 Funcionalidade: Perfil do Usuário
 
