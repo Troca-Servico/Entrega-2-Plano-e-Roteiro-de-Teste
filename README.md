@@ -94,6 +94,7 @@ O projeto será considerado aceito se:
 * Os usuários de teste aprovarem a usabilidade e acessibilidade do sistema.
 
 -------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------  
 
 # Roteiro de Teste - Sistema de Troca de Serviços
 
