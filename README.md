@@ -1,9 +1,9 @@
-# Plano de Teste - Sistema de Troca de Serviços
+#* Plano de Teste - Sistema de Troca de Serviços *#
 
 
 ## 1. Introdução
 
-Este documento descreve o plano de teste para o "Sistema de Troca de Serviços". O objetivo é garantir que o sistema atenda aos requisitos funcionais e não funcionais, esteja livre de defeitos e seja seguro para uso.
+Este plano de teste tem como objetivo garantir que o "Sistema de Troca de Serviços" atenda aos requisitos funcionais e não funcionais, garantindo que a plataforma seja segura, confiável e eficiente. O sistema é desenvolvido com as seguintes tecnologias: Frontend em HTML e CSS, Backend em Java, e Banco de Dados MySQL
 
 ## 2. Objetivos dos Testes
 
@@ -40,48 +40,50 @@ Os testes serão conduzidos em várias fases, incluindo:
 * Teste de Aceitação do Usuário (UAT): Para avaliar a usabilidade e acessibilidade.
 
 ## 5. Casos de Teste
+Cada área terá uma série de casos de teste específicos para cobrir os cenários criados pelos roteriros de testes.
 
 ### 5.1 Teste de Unidade
 
 * Caso de Teste 1: Verificar o cadastro de usuário.
 * Caso de Teste 2: Verificar a criação de perfil de usuário.
 * Caso de Teste 3: Verificar a pesquisa de serviços por categoria.
+* Caso de Teste 4: Verificar a detecção de informações duplicadas, como e-mail e CPF já registrado.
 
 
 ### 5.2 Teste de Integração
 
-* Caso de Teste 4: Verificar a integração entre o cadastro de usuário e o perfil do usuário.
-* Caso de Teste 5: Verificar a integração entre a pesquisa de serviços e a publicação de ofertas de serviços.
+* Caso de Teste 5: Verificar a integração entre o cadastro de usuário e o perfil do usuário.
+* Caso de Teste 6: Verificar a integração entre a pesquisa de serviços e a publicação de ofertas de serviços.
   
 
 ### 5.3 Teste de Sistema
 
-* Caso de Teste 6: Teste completo do processo de solicitação de serviços e gestão de trocas.
-* Caso de Teste 7: Teste de segurança para proteção de dados do usuário.
+* Caso de Teste 7: Teste completo do processo de solicitação de serviços e gestão de trocas.
+* Caso de Teste 8: Teste de segurança para proteção de dados do usuário.
 
 
 ### 5.4 Teste de Desempenho
 
-* Caso de Teste 8: Avaliar o desempenho sob carga simulando múltiplos usuários.
-
+* Caso de Teste 9: Avaliar o desempenho sob carga simulando múltiplos usuários.
 
 
 ### 5.5 Teste de Segurança
 
 * Caso de Teste 10: Verificar a proteção contra ameaças comuns.
 * Caso de Teste 11: Testar a autenticação e autorização.
-...
+
 
 ### 5.6 Teste de Aceitação do Usuário (UAT)
 
 * Caso de Teste 12: Avaliar a usabilidade da interface do usuário.
 * Caso de Teste 13: Avaliar a acessibilidade do sistema.
-...
+  
 
 ## 6. Recursos e Cronograma
 
 * Recursos: Equipe de teste, ambiente de teste, dados de teste, usuários de teste.
 * Cronograma: Os testes ocorrerão ao longo de um período de [31/10 até 27/11].
+  
 
 ## 7. Critérios de Aceitação
 
@@ -105,7 +107,7 @@ O projeto será considerado aceito se:
 
  ### Cenário: Tentativa de cadastro com informações inválidas
    * Dado que o usuário está na página de cadastro
-   * Quando o usuário preenche os campos com informações inválidas
+   * Quando o usuário preenche os campos com informações inválidas ou informações já criadas como CPF ou e-mail, já criados
    * E clica no botão "Cadastrar"
    * Então o sistema deve exibir uma mensagem de erro
 
@@ -124,23 +126,23 @@ O projeto será considerado aceito se:
    * Quando o usuário visualiza o perfil desse outro usuário
    * Então o sistema deve exibir as informações do perfil desse usuário
 
-Funcionalidade: Pesquisa de Serviços
+## Funcionalidade: Pesquisa de Serviços
 
  ### Cenário: Pesquisa de serviços por categoria
    * Dado que o usuário está logado em sua conta
    * E há serviços cadastrados no sistema com categorias específicas
    * Quando o usuário seleciona uma categoria de serviço
-   * E clica no botão "Pesquisar"
-   * Então o sistema deve exibir uma lista de serviços da categoria selecionada
+   * E clica no botão "Pesquisar" ou nos icones de serviços
+   * Então o sistema deve exibir os perfil de serviços da categoria selecionada
 
  ### Cenário: Pesquisa de serviços com palavras-chave
    * Dado que o usuário está logado em sua conta
    * E há serviços cadastrados no sistema com descrições que contêm palavras-chave
    * Quando o usuário insere palavras-chave na barra de pesquisa
    * E clica no botão "Pesquisar"
-   * Então o sistema deve exibir uma lista de serviços com base nas palavras-chave
+   * Então o sistema deve exibir perfil de serviços com base nas palavras-chave
 
-Funcionalidade: Publicação de Ofertas de Serviços
+## Funcionalidade: Publicação de Ofertas de Serviços - (em analise sobre como irá funcionar)
 
 ### Cenário: Publicação de uma oferta de serviço
    * Dado que o usuário está logado em sua conta
@@ -156,23 +158,23 @@ Funcionalidade: Publicação de Ofertas de Serviços
    * E clica no botão "Publicar"
    * Então o sistema deve exibir uma mensagem de erro
 
-Funcionalidade: Solicitação de Serviços
+## Funcionalidade: Solicitação de Serviços
 
 ### Cenário: Envio de uma solicitação de serviço
    * Dado que o usuário está logado em sua conta
-   * E está visualizando uma oferta de serviço
-   * Quando o usuário envia uma solicitação para o prestador de serviço
+   * E está visualizando uma oferta de serviço ( perfil de outro prestador )
+   * Quando o usuário envia uma solicitação para ococrrer a troca do serviço
    * E clica no botão "Enviar Solicitação"
-   * Então o prestador de serviço deve receber a solicitação
+   * Então o solicitado deve receber a solicitação
 
  ### Cenário: Tentativa de envio de solicitação sem preencher informações necessárias
    * Dado que o usuário está logado em sua conta
-   * E está visualizando uma oferta de serviço
+   * E está visualizando uma oferta de serviço ( perfil de outro prestador )
    * Quando o usuário tenta enviar uma solicitação sem preencher informações necessárias
    * E clica no botão "Enviar Solicitação"
    * Então o sistema deve exibir uma mensagem de erro
 
-Funcionalidade: Chat de Comunicação
+## Funcionalidade: Chat de Comunicação
 
   ### Cenário: Iniciar uma conversa com outro usuário
    * Dado que o usuário está logado em sua conta
@@ -186,7 +188,7 @@ Funcionalidade: Chat de Comunicação
    * Quando o usuário digita uma mensagem e a envia
    * Então a mensagem deve ser entregue ao outro usuário
 
-Funcionalidade: Avaliações e Classificações
+## Funcionalidade: Avaliações e Classificações
 
   ### Cenário: Avaliar outro usuário após uma troca de serviço
    * Dado que o usuário está logado em sua conta
@@ -201,13 +203,18 @@ Funcionalidade: Avaliações e Classificações
    * Quando o usuário tenta avaliar o outro usuário
    * Então o sistema deve exibir uma mensagem de erro
 
-Funcionalidade: Gestão de Trocas
+## Funcionalidade: Gestão de Trocas
 
  ### Cenário: Visualização das trocas de serviço pendentes
    * Dado que o usuário está logado em sua conta
    * E há trocas de serviço pendentes em seu perfil
    * Quando o usuário acessa a página de trocas pendentes
    * Então o sistema deve exibir uma lista das trocas pendentes
+
+ ### Cenário: Visualização das trocas de serviços que foram solicitadas, mas ainda não foram aceita ou recusadas 
+   * Dado que o usuário está logado em sua conta
+   * E há trocas de serviços que foram solicitas
+   * Quando o usuário acessa a página de solicitados poderá aceitar ou recusar dependeno do que deseja
 
  ### Cenário: Marcar uma troca de serviço como concluída
    * Dado que o usuário está logado em sua conta
