@@ -19,10 +19,9 @@ Os testes abrangem as seguintes áreas do sistema:
 * Cadastro de Usuário
 * Perfil do Usuário
 * Pesquisa de Serviços
-* Publicação de Ofertas de Serviços
+* Publicação de Ofertas de Serviços (opcional)
 * Solicitação de Serviços
-* Chat de Comunicação
-* Avaliações e Classificações
+* Avaliações e Classificações (quero ver minhas avaliações
 * Gestão de Trocas
 * Disponibilidade
 * Usabilidade
