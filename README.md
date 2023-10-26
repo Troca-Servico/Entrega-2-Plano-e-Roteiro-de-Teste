@@ -203,6 +203,12 @@ O projeto será considerado aceito se:
    * Quando o usuário tenta avaliar o outro usuário
    * Então o sistema deve exibir uma mensagem de erro
 
+#### Cenário: Tentativa de avaliar um serviço antigo novamente
+   * Dado que o usuário esteja logado em sua conta
+   * E ja tenha avaliado um serviço
+   * Quando o usuário tentar avaliar o serviço novamente
+   * Então o sistema deve exibir uma mensagem informando a proibição da ação
+
 ## Funcionalidade: Gestão de Trocas
 
  #### Cenário: Visualização das trocas de serviço pendentes
