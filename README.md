@@ -142,6 +142,12 @@ O projeto será considerado aceito se:
    * E clica no botão "Pesquisar"
    * Então o sistema deve exibir perfil de serviços com base nas palavras-chave
 
+ #### Cenário: Pesquisa de serviços inexistentes
+  * Dado que o usuário esteja logado em sua conta
+  * E queira pesquisa algum serviço
+  * Quando o usuário inserir as palavras erradas ou de serviços que não são oferecidos
+  * Então o sistema deve informar que não há resultados para a busca
+
 ## Funcionalidade: Publicação de Ofertas de Serviços - (em analise sobre como irá funcionar)
 
 #### Cenário: Publicação de uma oferta de serviço
@@ -157,6 +163,7 @@ O projeto será considerado aceito se:
    * Quando o usuário tenta publicar uma oferta de serviço com informações em falta
    * E clica no botão "Publicar"
    * Então o sistema deve exibir uma mensagem de erro
+
 
 ## Funcionalidade: Solicitação de Serviços
 
