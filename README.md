@@ -111,6 +111,12 @@ O projeto será considerado aceito se:
    * E clica no botão "Cadastrar"
    * Então o sistema deve exibir uma mensagem de erro
 
+ #### Cenário: Tentativa de cadastro com informações faltantes
+   * Dado que o usuário está na página de cadastro
+   * E deixa informações em branco durante o processo
+   * Quando o usuário clicar em "cadastrar"
+   *  Então o sistema deve exibir uma mensagem de erro avisando que há informações faltantes
+
 ## Funcionalidade: Perfil do Usuário
 
  #### Cenário: Atualização do perfil de usuário
@@ -125,6 +131,12 @@ O projeto será considerado aceito se:
    * E há um outro usuário registrado no sistema
    * Quando o usuário visualiza o perfil desse outro usuário
    * Então o sistema deve exibir as informações do perfil desse usuário
+
+#### Cenário: Divulgação de fotos no perfil do usuário
+ * Dado que o usuário esta logado em sua conta pela primeira vez
+ * E está na página inicial
+ * Quando o usuário começar navegar pelo site
+ * Então o sistema deve exibir um aviso de que estão faltando fotos do seu trabalho
 
 ## Funcionalidade: Pesquisa de Serviços
 
@@ -142,12 +154,6 @@ O projeto será considerado aceito se:
    * E clica no botão "Pesquisar"
    * Então o sistema deve exibir perfil de serviços com base nas palavras-chave
 
- #### Cenário: Pesquisa de serviços inexistentes
-  * Dado que o usuário esteja logado em sua conta
-  * E queira pesquisa algum serviço
-  * Quando o usuário inserir as palavras erradas ou de serviços que não são oferecidos
-  * Então o sistema deve informar que não há resultados para a busca
-
 ## Funcionalidade: Publicação de Ofertas de Serviços - (em analise sobre como irá funcionar)
 
 #### Cenário: Publicação de uma oferta de serviço
@@ -164,13 +170,20 @@ O projeto será considerado aceito se:
    * E clica no botão "Publicar"
    * Então o sistema deve exibir uma mensagem de erro
 
+ #### Cenário: Publicações inadequadas
+   * Dado que um usuário faz uma postagem inadequada na plataforma
+   * E outro usuário visualiza estas postagens
+   * Quando o usuário denunciar a publicação
+   * Então, a mesma irá para uma análise podendo ser excluida
+
+#### Cenário: 
 
 ## Funcionalidade: Solicitação de Serviços
 
 #### Cenário: Envio de uma solicitação de serviço
    * Dado que o usuário está logado em sua conta
    * E está visualizando uma oferta de serviço ( perfil de outro prestador )
-   * Quando o usuário envia uma solicitação para ocorrer a troca do serviço
+   * Quando o usuário envia uma solicitação para ococrrer a troca do serviço
    * E clica no botão "Enviar Solicitação"
    * Então o solicitado deve receber a solicitação
 
@@ -180,12 +193,6 @@ O projeto será considerado aceito se:
    * Quando o usuário tenta enviar uma solicitação sem preencher informações necessárias
    * E clica no botão "Enviar Solicitação"
    * Então o sistema deve exibir uma mensagem de erro
-
-#### Cenário: Bloqueio de recebimento de solicitações
-   * Dado que o usuário esteja logado em sua conta
-   * E está no perfil de alguem que não deseja receber solicitações
-   * Quando usuário clicar em bloquear
-   * Então o sistema não deve permitir que aquele usuário envie solicitações para o outro usuário
 
 ## Funcionalidade: Chat de Comunicação
 
