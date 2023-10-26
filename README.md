@@ -163,7 +163,7 @@ O projeto será considerado aceito se:
 #### Cenário: Envio de uma solicitação de serviço
    * Dado que o usuário está logado em sua conta
    * E está visualizando uma oferta de serviço ( perfil de outro prestador )
-   * Quando o usuário envia uma solicitação para ococrrer a troca do serviço
+   * Quando o usuário envia uma solicitação para ocorrer a troca do serviço
    * E clica no botão "Enviar Solicitação"
    * Então o solicitado deve receber a solicitação
 
@@ -173,6 +173,12 @@ O projeto será considerado aceito se:
    * Quando o usuário tenta enviar uma solicitação sem preencher informações necessárias
    * E clica no botão "Enviar Solicitação"
    * Então o sistema deve exibir uma mensagem de erro
+
+#### Cenário: Bloqueio de recebimento de solicitações
+   * Dado que o usuário esteja logado em sua conta
+   * E está no perfil de alguem que não deseja receber solicitações
+   * Quando usuário clicar em bloquear
+   * Então o sistema não deve permitir que aquele usuário envie solicitações para o outro usuário
 
 ## Funcionalidade: Chat de Comunicação
 
@@ -187,6 +193,11 @@ O projeto será considerado aceito se:
    * E está em uma conversa existente com outro usuário
    * Quando o usuário digita uma mensagem e a envia
    * Então a mensagem deve ser entregue ao outro usuário
+  #### Cenário: Bloqueio de usuário
+   * Dado que o usuário esteja logado em sua conta
+   * E está em uma conversa que não gostaria ou não lhe agrada
+   * Quando o usuário clica na opção de bloquear
+   * Então o usuário bloqueado não poderá enviar mais mensagens 
 
 ## Funcionalidade: Avaliações e Classificações
 
