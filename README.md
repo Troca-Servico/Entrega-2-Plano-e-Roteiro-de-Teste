@@ -200,6 +200,13 @@ O projeto será considerado aceito se:
    * Quando o usuário tenta enviar uma solicitação sem preencher informações necessárias
    * E clica no botão "Enviar Solicitação"
    * Então o sistema deve exibir uma mensagem de erro
+ 
+ #### Cenário: Tentativa de envio de solitações para usuários bloqueados
+   * Dado que o usuário está logado em sua conta
+   * E está visualizando perfis e serviços disponíveis
+   * Quando o usuário tentar enviar uma solicitação para um usuário que o bloqueou
+   * Entçao o sistema deve exibir a mensagem "Não é permitido enviar a sua solicitação" 
+     
 
 ## Funcionalidade: Chat de Comunicação
 
