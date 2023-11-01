@@ -99,8 +99,6 @@ O projeto será considerado aceito se:
 
 ## Funcionalidade: Cadastro de Usuário
 
-####Funcionalidade: Cadastro de Usuário
-
  ### Cenário: Usuário preenche campos com informações inválidas
    * Dado que o usuário está na página de cadastro
    * Quando o usuário preenche os campos com informações inválidas ou informações já criadas como CPF ou e-mail, já criados
