@@ -99,23 +99,24 @@ O projeto será considerado aceito se:
 
 ## Funcionalidade: Cadastro de Usuário
 
-#### Cenário: Cadastro de um novo usuário com informações válidas
-   * Dado que o usuário está na página de cadastro
-   * Quando o usuário preenche os campos obrigatórios com informações válidas
-   * E clica no botão "Cadastrar"
-   * Então o usuário deve ser redirecionado para seu perfil
+####Funcionalidade: Cadastro de Usuário
 
- #### Cenário: Tentativa de cadastro com informações inválidas
+ ### Cenário: Usuário preenche campos com informações inválidas
    * Dado que o usuário está na página de cadastro
    * Quando o usuário preenche os campos com informações inválidas ou informações já criadas como CPF ou e-mail, já criados
-   * E clica no botão "Cadastrar"
    * Então o sistema deve exibir uma mensagem de erro
 
- #### Cenário: Tentativa de cadastro com informações faltantes
+ ###  Cenário: Usuário preenche campos com informações válidas
    * Dado que o usuário está na página de cadastro
-   * E deixa informações em branco durante o processo
-   * Quando o usuário clicar em "cadastrar"
-   *  Então o sistema deve exibir uma mensagem de erro avisando que há informações faltantes
+   * Quando o usuário preenche os campos com informações válidas
+   * Então o sistema deve exibir uma mensagem de confirmação de cadastro
+
+ ###  Cenário: Tentativa de cadastro com informações duplicadas
+  * Dado que o usuário está na página de cadastro
+  * E o usuário já possui uma conta registrada com o mesmo e-mail
+  * Quando o usuário preenche os campos de cadastro com informações duplicadas
+  * E clica no botão "Cadastrar"
+  * Então o sistema deve exibir uma mensagem de erro informando que o e-mail já está em uso
 
 ## Funcionalidade: Perfil do Usuário
 
